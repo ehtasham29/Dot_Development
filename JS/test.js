@@ -1,3 +1,5 @@
+// this file is for testing any short program  here only
+
 function createRectangle() {
     let rectangle = {
         length: 1,
