@@ -112,12 +112,12 @@
 // console.log(numbers.indexOf(3,10)) ;
 
 // doing same operations on refrences 
-let courses = [
-    {no:1, naam:"Ehtasham"} ,
-    {no:2, naam:"Nazim"} ,
-    {no:3, naam:"Sameer"} ,
-    {no:4, naam:"Sarfaraz"} ,
-]
+// let courses = [
+//     {no:1, naam:"Ehtasham"} ,
+//     {no:2, naam:"Nazim"} ,
+//     {no:3, naam:"Sameer"} ,
+//     {no:4, naam:"Sarfaraz"} ,
+// ]
 // console.log(courses) ;
 
 // console.log(courses.indexOf({no:1, naam:"Ehtasham"})) ; // O/P => -1 , coz these values of console is diff object and have not the same refrence value as the main 
@@ -127,7 +127,110 @@ let courses = [
 
 //  here we use CALLBACK FUNCTION 
 
+// console.log(courses) ;
+
+// let course = courses.find(function(course) {
+//     return course.naam = 'Sameer' ;
+// })
+// using arrow function 
+
+// let course = courses.find(course => {
+//     return course.naam = 'Sameer' ;
+// })
+// console.log(course) ;
 
 
-// console.log(courses) ;
-// console.log(courses) ;
+// Removing Element 1. from end , 2. from begining , 3. from in between 
+
+// let numbers = [1,2,3,4,5,6,7] 
+// numbers.pop() ;
+// numbers.shift() ;
+// numbers.splice(3,1) ;
+// console.log(numbers) ;
+
+// Emptying an array :
+
+// numbers = [] ;
+// let numbers2 = numbers ;
+// numbers = [] ;
+// numbers.length = 0 ;
+// numbers.splice(0,numbers.length) ;
+// console.log(numbers) ;
+// console.log(numbers2) ;
+
+//  Combining & slicing of array 
+
+// let first = [1,2,3,4] 
+// let second = [5,6,7,8] 
+// let combine = first.concat(second) ;
+// console.log(combine)
+// let sliced = combine.slice(2,4)
+// console.log(sliced)
+
+// let combine = [...first,...second] 
+// let combine = [...first,'a','b',...second] 
+// console.log(combine)
+
+//  Iterating an Array  
+
+// let arr = [10,20,30,40,50,60] 
+
+//  using for-of
+// for (let value of arr) {
+//     console.log(value) 
+// }
+
+// using for each 
+// arr.forEach(number => {
+//     console.log(number)
+// })
+
+// ------------------------------------------------
+// Joining and splitting  array 
+
+// let arr = [10,20,30,40,50,60] 
+// const joined = arr.join(',') ;
+// console.log(joined) ;
+
+// let msg = 'this is my first text message' ;
+// let parts = msg.split(' ') ;
+
+// console.log(parts) ;
+
+// ----------------------------------------------------------------
+
+//  Sorting array 
+
+// let numbers = [32,12,3,56,22] 
+// numbers.sort() // sort the string after converting array in string 
+// console.log(numbers) 
+
+// Filtering an array 
+
+// let numbers = [12,3,4,5,-6,-4,8,-78] 
+
+// let filtered = numbers.filter(value => {
+//     return value >= 0
+// })
+
+// console.log(filtered) ; 
+
+
+//  ----------------------------------------
+// MAPPING ARRAYS 
+
+let numbers = [7,8,9,10,11] ;
+
+// let items = numbers.map(value => {
+//     return 'student_no ' + value ;
+// })
+
+// console.log(items) 
+
+// let filtered = numbers.filter(value => value >= 0) ;
+
+// let items = filtered.map(num => {
+//     return {value : num } 
+// })
+
+// console.log(items)
