@@ -219,7 +219,7 @@
 //  ----------------------------------------
 // MAPPING ARRAYS 
 
-let numbers = [7,8,9,10,11] ;
+// let numbers = [7,8,9,10,11] ;
 
 // let items = numbers.map(value => {
 //     return 'student_no ' + value ;
